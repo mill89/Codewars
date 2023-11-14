@@ -5,7 +5,6 @@ def filter_list(l: list) -> list:
     return list(filter(lambda n: isinstance(n, int), l))
 
 
-
 if __name__ == '__main__':
     print(filter_list([1, 2, 'a', 'b']))
     assert filter_list([1, 2, 'a', 'b']) == [1, 2]
