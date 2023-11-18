@@ -8,6 +8,7 @@ def rps(player1: str, player2: str) -> str:
 
 
 if __name__ == '__main__':
+    print(rps(*input('введите результат через пробел:\n').split()))
     print(rps('scissors', 'rock'))
     print(rps('paper', 'rock'))
     print(rps('rock', 'scissors'))
