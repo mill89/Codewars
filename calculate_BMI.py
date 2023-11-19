@@ -27,6 +27,8 @@ def bmi(weight: int | float, height: int | float) -> str:
 
 if __name__ == '__main__':
     print(bmi(47, 1.61))
+    print(47 / 1.67 ** 2)  # 16
+    print(bmi(78.5, 1.75))
 
     assert bmi(50, 1.80) == "Underweight"
     assert bmi(80, 1.80) == "Normal"
