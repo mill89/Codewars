@@ -3,13 +3,13 @@
 # percent,
 # aug (inhabitants coming or leaving each year),
 # p (population to equal or surpass)
-import math
+from math import floor
 
 
 def nb_year(p0: int, percent: int | float, aug: int, p: int) -> int:
     years = 0
-    while p0 <= p:
-        p0 += math.floor(p0 * (percent / 100)) + aug
+    while p0 < p:
+        p0 += floor(p0 * (percent / 100)) + aug
         years += 1
     return years
 
