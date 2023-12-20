@@ -27,5 +27,3 @@ if __name__ == '__main__':
     assert duplicate_encode("recede") == "()()()"
     assert duplicate_encode("Success") == ")())())", "should ignore case"
     assert duplicate_encode("(( @") == "))(("
-
-dict.get
