@@ -33,16 +33,17 @@ def maze_runner(maze, directions):
     if 0 <= current_row < len(maze) and 0 <= current_col < len(maze[0]):
         return "Lost"
 
-# Example usage:
-maze = [[1,1,1,1,1,1,1],
-        [1,0,0,0,0,0,3],
-        [1,0,1,0,1,0,1],
-        [0,0,1,0,0,0,1],
-        [1,0,1,0,1,0,1],
-        [1,0,0,0,0,0,1],
-        [1,2,1,0,1,0,1]]
 
-directions = ["N","N","N","N","N","E","E","E","E","E"]
+# Example usage:
+maze = [[1, 1, 1, 1, 1, 1, 1],
+        [1, 0, 0, 0, 0, 0, 3],
+        [1, 0, 1, 0, 1, 0, 1],
+        [0, 0, 1, 0, 0, 0, 1],
+        [1, 0, 1, 0, 1, 0, 1],
+        [1, 0, 0, 0, 0, 0, 1],
+        [1, 2, 1, 0, 1, 0, 1]]
+
+directions = ["N", "N", "N", "N", "N", "E", "E", "E", "E", "E"]
 
 result = maze_runner(maze, directions)
 print(result)
