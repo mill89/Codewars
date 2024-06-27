@@ -11,6 +11,11 @@ def sale_hotdogs(n: int) -> int:
             return n * 90
 
 
+# def sale_hotdogs(n):
+#     return (100, 95, 90)[(n > 4) + (n > 9)] * n
+
+
+
 if __name__ == '__main__':
     print(sale_hotdogs(123))
 
